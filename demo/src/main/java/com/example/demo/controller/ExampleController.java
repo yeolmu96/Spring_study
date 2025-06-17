@@ -7,17 +7,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class ExampleController {
 
-    @GetMapping("/hello")
+    @GetMapping("hello")
     public String hello(Model model) {
         model.addAttribute("message", "안녕");
         return "hello";
     }
 
-    @GetMapping("hi")
-    public String hi() {
-        return "Hi World!";
-    }
-
-    @GetMapping("bye")
-    public String bye() { return "Bye World!";}
+//    @GetMapping("hi")
+//    public String hi() {
+//        return "Hi World!";
+//    }
+//
+//    @GetMapping("bye")
+//    public String bye() { return "Bye World!";}
 }
